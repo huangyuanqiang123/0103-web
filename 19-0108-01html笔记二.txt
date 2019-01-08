@@ -1,0 +1,65 @@
+html第二课
+布局：把文字或图片按照一定的排版的方式组织在网页上
+表格式布局
+	html表格
+		<table></table>
+		行：<tr>
+		列：<td>(表列，表元，单元格）
+		规矩的表格：平均几行，平均几列
+		属性：border=1表格边框宽度为1
+		注意：没有border基本看不见表格
+			 单元格没有内容，表格宽度很难体现
+		大部分html元素有两个属性：width宽度
+								height高度
+	表格布局：
+		思想：先把布局用表格的思维去考虑，然后在表格的单元添元素。
+		html空格元素 &nbsp;
+		表格布局少用&nbsp,用一个空白的单元格<td width=200></td>表示空白的位置是200
+		列跨度:一个单元格的宽度等于多个单元格宽度，使用列跨度，colspan,一定是作用在td上的
+			colspan=单元格宽度跨几个格
+		行跨度：一个单元格的高度等于多个单元格高度，使用行跨度，rowspan,一定要作用在td上的
+			rowspan=单元格高度跨几个格
+	兼容（适配）只是去兼容主流浏览器（数据分析结果）
+				火狐，google,safari,欧鹏（opper),ie(ietest)ie9以上
+html链接刷新整个页面（全页面刷新）
+框架集解决局部刷新
+frameset
+布局思想：框架集里包含框架frame,刷新框架
+frameset里面包含frame
+frames写body上面
+格式：
+		<frameset cols rows>
+			<frame>
+			</frame>
+		</frameset>
+		cols用框架集把页分成几列，rows用框架集分成几行 
+		网页页面分成头部，尾部，中间部分，中间包含左栏，右栏
+		<frameset rows=25%,*,10% cols=50%,*>
+			<frame>
+			</frame>
+			<frame>
+			</frame>
+			<frame>
+			</frame>
+			<frame>
+			</frame>
+			<frame>
+			</frame>
+			<frame>
+			</frame>
+		</frameset>
+		知道几个点：
+			1、frameset可以嵌套frameset,嵌套时再进行框架网页分行，分列
+			2、要为每个frameset里面的frame设置 name属性，name不要重复
+			3、建链接时<a >属性target=目标frame的name属性值 
+			target=blank 新的窗口
+			默认不写target,相当于target=self
+Table布局+iframe
+		<iframe src=网页  name=bottom1></iframe>
+div+css
+css
+		
+			
+
+
+	
