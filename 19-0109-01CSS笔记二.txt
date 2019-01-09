@@ -1,0 +1,101 @@
+CSS第二课
+属性总结：
+	CSS里面涉及属性和值 ，都是冒号
+	html里面涉及属性和值，都是=
+CSS主要选择器：
+	标签选择器：实现过程（把html标签选择出来）
+	类别选择器：实现过程（为html元素增加class属性，css声明类选择器的样式）
+	id选择器：实现过程（为html元素增加id属性，css声明id选择器的样式）
+三种选择器优先级：id >类别>标签 
+class=“a b” id=“a”
+id选择器只能定义一个（html文档中只有一个id)——>唯一
+案例：砸蛋
+	用背景图像,不是<img/>标签 
+	表格布局，td没有宽和高，如果显示背景，定义td宽和高
+	js脚本：
+	前端js一般都发生在事件的动作上。
+	对应了一个金蛋的点击事件：onclick
+	事件作用在哪个元素，你就在html元素标签上加上onclick属性 
+	把类别选择器如果在点击时作用在这个元素：
+		onclick=this.className='名字'	
+	把id选择器如果在点击时作用在这个元素上：
+		onclick=this.id='名字'
+	随机
+		随机函数：（来自于一个数学库）
+		Math random()产生随机数，产生0-1之间小数，可能等于0,但不等于1
+		使用：Math.random()产生这个随机数
+			理解Math.random(),点理解成分隔符，分隔符前面相当于引用的功能的出处，分隔符后面引用具体的功能	
+			产生两种可能：一种可能金蛋，一种可能是空蛋
+			0 1 0.222 0.5555 0.99999 
+			Math.round()四舍五入
+			js弹出显示框  alert 输出
+当所有标签都满足某个属性,CSS全局选择器
+			*{
+				font-size:30px;
+			}
+			优先级小于基本选择器
+		CSS属性：
+			字体相关的属性：
+				font-family: 字体名称
+				font-size:字号			
+				color:颜色
+				font-weight:bold;加粗
+				font-style:italic;倾斜
+				text-decoration:underline;下划线（如果原来有，改成没有：none)
+				text-align:center;文字居中
+		空链接： <a href='#'></a>
+		背景属性:
+			background:
+			颜色：background:black   图片：background:url(a.jpg)
+			背景颜色： background-color：颜色单词
+			背景图片: background-image:url(地址)
+			背景重复：background-repeat:
+						四个选项： repeat重复（默认)
+								no-repeat不重复
+								repeat-x横向重复（把图片水平重复展开）
+								repeat-y纵向重复（把图片竖直重复展开）
+			背景位置：（图片在背景图中的位置）
+					background-position:横向位置  纵向位置 
+							位置可以用：px 
+										百分比
+										方位单词  center中间
+													left right top bottom
+		(H5)背景尺寸（如果图片的大小小于背景大小，图片可以通过背景尺寸进行拉伸）
+				background-size:100% 100%;横向和纵向都拉伸到100%
+		边框属性：
+			border-style:边框样式
+							solid 实线
+							dashed 虚线
+							dotted 点线
+							double 双线
+			border-width:边框粗细
+			border-color:边框颜色
+			设置边框，三个属性必须都有，不能有缺失。
+		（H5)把边框做圆角处理:
+				border-radius:px的值 
+			正常情况下，边框都是矩形的
+			边框变成圆：
+				1、给图片宽高一致
+				2、圆角的长度是宽的一半或者高的一半
+			
+			
+			画三角：
+				1、宽、高为0
+				2、边框样式：solid
+				3、边框的大小就是三角的大小
+				4、边框颜色：上三角，把边框下边沿加一个颜色，其它边沿加透明色（transparent) 有四个参数：上  右  下   左（从上面开始，顺时针数方向）
+				background-color:transparent transparent red transparent;
+
+			三角的情况下，宽高不为0，就是一个梯形，梯形围成的圈可以加内容 
+
+
+		
+				
+								
+			
+
+
+			
+			
+		
+		
