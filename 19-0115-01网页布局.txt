@@ -1,0 +1,62 @@
+网页布局：
+	PC端head和head之间
+		搜索引挚的关键字
+		<meta name=‘keywords’ content=‘味道，饮食，中国味道’>(3-5)
+		网站的描述
+		<meta name=‘description’ content=‘’>
+		网站标题logo
+		<link rel=‘icon’ href=‘.ico’
+	网页常见三种图片格式：
+		png gif jpg
+		最小：gif 最大:jpg
+导航或菜单在布局习惯性用列表（ul li)和(ol li)
+文字垂直居中：line-height设置值是height的高度即可
+			line-height:指的是两个文字之间的行高
+html水平线：hr
+简易菜单
+布局：		
+		
+		<div class='caidan'>
+			<p>菜单1</p>
+			<div class='hidden'>
+				<p>子菜1</p>
+				<p>子菜2</p>
+			</div>
+			
+			
+			
+		</div>
+		<p>这是一个项目</p>
+样式：
+	/* 简易菜单 */
+		.caidan{
+			position:relative;
+		}
+		.caidan .hidden{
+			position:absolute;
+		}
+		.caidan .hidden{
+			display:none;
+		
+		}
+		.caidan:hover .hidden{
+			display:block;
+		}
+		/*简易菜单结束*/
+在html页面上显示大于号，小于号可以采用&lt;小于&gt;大于
+background-size:contain;
+	contain等比例拉伸，其中一个（width或者height全部显示）
+首行缩进（中文文章第一行空两格）： text-indent:4px;
+网页进行布局：
+	1、一个横行就是一个盒子
+	2、里面的元素算作子盒子
+	3、导航、菜单、左栏 、右栏 做列表处理
+	4、如果三层标题做dl dt dd 
+	5、图文混排基本都是用盒子包起来
+	6、两个块状元素在一行，就浮动
+	7、如果有元素覆盖的现象，就考虑绝对定位和相对定位
+
+
+	
+	
+	
