@@ -1,0 +1,90 @@
+CSS
+	字体图标
+	带图片特征的输入框：
+	css:
+	div{
+		width:；
+		height：；
+		border:1px solid gray;
+		border-radius:5px;
+	}
+	input{
+		border:none;
+	}
+	html:
+	<div>
+		<input type=’text’/>(height跟字体有关系)
+		<img src=‘yanging.png’/>
+	</div>
+	图片超出部分隐藏：
+		overflow:hidden;
+练习：先把布局样子——兼容——移动端和pc端
+js基础：
+	js全称javascript
+	js区分大小写，该大写的大写，该小写的小写	
+	html css不区分大小写
+	js注释是/* */
+	四个语句:
+		js写在<script></script>,尽量放在</body>前面
+		1、弹出消息框：
+			alert(内容）
+			此语句常用在调试上，
+			特点：
+				1、遇到alert程序不再执行，等着用户点击确定后再执行。可以去验证你的程序执没执行。（验证此代码是否被执行）
+				2、验证计算出的结果是否正确
+			内容是中文或英文信息，加引号 
+				alert(‘欢迎光临’）
+				alert(‘welcome’)
+			不加引号输出相当于未知数的值				
+			加了引号输出引号里面的内容
+		2、确认框
+			confirm
+				此语句不但有确定按钮，还有一个取消按钮
+			最常见的应用场合：
+				一般情况下用在删除信息的时候			
+				confirm(‘是否删除’)
+				扩展：
+				对用户某一个操作危险性的确认
+				接收结果：用一个未知数
+				x=confirm(‘是否删除’)
+				true正确的，反映用户点击确定
+				false错误的，反映了用户点击取消
+		3、输入框 
+				prompt
+				此语句不但有确定和取消，还多了一个输入框 
+				弹出对话框之后，可以输入相关的信息
+				用未知数接收：
+				x=prompt(‘请输入你的姓名’)
+				alert(x)弹出未知数的值
+		4、把信息写在网页上：
+				document 指的是浏览器页面
+				document.write(‘1111’)页面上引号里面的内容
+				document.write(x)页面上写的x代表的值 
+			实现：让用户输入用户名，输入后写到网页上
+	一个控制台输出：（console)动态查看程序执行状况
+			console.log(‘xxxxx’)
+	一个取元素操作
+			按id名来取
+				合成词，第一个单词首字母小写，后面单词首字母都是大写，这种合成词技术叫小驼峰
+				合成词，所有单词第一个字母大写，这种合成词技术叫大驼峰。
+				document.getElementById(‘id名’)
+				id名不用写#，只写名字				
+				document.getElementById(’加数’)*10
+			取值：开始标签和结束标签中间的文本
+				innerText取两个标签之间的文本
+			取CSS样式：
+				把样式写在标签上：<div style=‘width:200px’>
+				元素.style.width
+				style样式出现短线，把短线变成小驼峰，就是短线后面的单词首字母大写
+			注意：
+				<input type=‘text’></input>
+				取input输入内容：需要value
+				元素.value
+				设置 图片src属性 
+				元素.src
+				如果取的是标签后面的属性,直接用元素.点出来属性名 就可以  
+				元素.属性名 
+				<font size 
+				
+				
+	
