@@ -1,0 +1,29 @@
+<html>
+<head>
+	<title>求两数之和</title>
+	
+</head>
+<body>
+	一个数：<input type='text' id='add1'/><br/>
+	另一个数：<input type='text' id='add2'/><br/>
+	结果:<input type='text' id='result'/><br/>
+	<input type='button' value='求和' onclick='ab()' />
+	<script>
+			/*
+			x=prompt('请输入一个数')
+			y=prompt('再输入一个数')
+			sum=Number(x)+Number(y)
+			alert(sum)
+			console.log(Number('1')+Number('2'))
+			*/
+			
+			function ab(){
+				/*执行的语句 */
+				x=document.getElementById('add1').value
+				y=document.getElementById('add2').value
+				sum=Number(x)+Number(y)
+				document.getElementById('result').value=sum
+			}
+	</script>
+</body>
+</html>
