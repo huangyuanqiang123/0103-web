@@ -1,0 +1,26 @@
+<html>
+<head>
+	<title>if条件姻缘测试</title>
+	<style>
+			
+	</style>
+</head>
+<body>
+	
+	<script>
+			/*if(5>7){console.log('1')}else{console.log('2')}*/
+			/*用一个最简单的式子表示,冒号运算符，三元运算符*/
+			/*5>7?console.log('1'):console.log('2')*/
+			x=prompt('请输入一个男生的姓名')
+			y=prompt('请输入一个女生的姓名')
+			s=Math.round(Math.random()*100)
+			if (s>60){
+				xy='男生的姓名:'+x+',女生的姓名:'+y+'他们的姻缘系数为:'+s+',他们匹配成功'
+				document.write(xy)
+			}else{
+				xy='男生的姓名:'+x+',女生的姓名:'+y+'他们的姻缘系数为:'+s+',他们匹配不成功'
+				document.write(xy)			
+			}
+	</script>
+</body>
+</html>
