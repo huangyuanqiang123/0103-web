@@ -1,0 +1,30 @@
+<html>
+<head>
+	<title>if条件中奖</title>
+	<style>
+			
+	</style>
+</head>
+<body>
+	<input type='text' id='hao'/>
+	<input type='button' value='开始兑奖' onclick='ab()' id='ban' />
+	<script>
+			s=Math.round(Math.random()*10)
+			console.log(s)
+			/*cishu自己增加解决问题的未知数*/
+			cishu=0
+			function ab(){
+				cishu=cishu+1
+				k=document.getElementById('hao').value
+				if(s==k){
+					alert('恭喜中奖!')
+				}else{
+					alert('谢谢参与!')
+				}
+				if (cishu==3){
+					document.getElementById('ban').disabled=true
+				}
+			}
+	</script>
+</body>
+</html>
