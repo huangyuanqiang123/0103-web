@@ -1,0 +1,66 @@
+<html>
+<head>
+	<title>if登陆界面</title>
+	<style>
+			
+	</style>
+</head>
+<body>
+	<input type='text' id='q1'/><br/>
+	<input type='text' id='q2'/><br/>
+	<input type='text' id='q3'/><br/>
+	<input type='text' id='q4'/><br/>
+	<input type='text' id='q5'/><br/>
+	<input type='text' id='q6'/><br/>
+	<input type='text' id='l1'/><br/>
+	<input type='button' value='判断' onclick='ab()' id='ban'/>
+	<script>
+		jh1=Math.round(Math.random()*35+1)
+		jh2=Math.round(Math.random()*35+1)
+		jh3=Math.round(Math.random()*35+1)
+		jh4=Math.round(Math.random()*35+1)
+		jh5=Math.round(Math.random()*35+1)
+		jh6=Math.round(Math.random()*35+1)
+		jl1=Math.round(Math.random()*35+1)
+		function ab(){
+			q1=document.getElementById('q1').value
+			q2=document.getElementById('q2').value
+			q3=document.getElementById('q3').value
+			q4=document.getElementById('q4').value
+			q5=document.getElementById('q5').value
+			q6=document.getElementById('q6').value
+			l1=document.getElementById('l1').value
+			cishu=0
+			if(q1==jh1||q1==jh2||q1==jh3||q1==jh4||q1==jh5||q1==jh6){	
+				cishu=cishu+1
+			}
+			if(q2==jh1||q2==jh2||q2==jh3||q2==jh4||q2==jh5||q2==jh6){	
+				cishu=cishu+1
+			}	
+			if(q3==jh1||q3==jh2||q3==jh3||q3==jh4||q3==jh5||q3==jh6){	
+				cishu=cishu+1
+			}	
+			if(q4==jh1||q4==jh2||q4==jh3||q4==jh4||q4==jh5||q4==jh6){	
+				cishu=cishu+1
+			}	
+			if(q5==jh1||q5==jh2||q5==jh3||q5==jh4||q5==jh5||q5==jh6){	
+				cishu=cishu+1
+			}	
+			if(q6==jh1||q6==jh2||q6==jh3||q6==jh4||q6==jh5||q6==jh6){	
+				cishu=cishu+1
+			}			
+			if(cishu==4){
+				alert('三等奖')
+			}else if (cishu==5){
+				alert('二等奖')
+			}else if(cishu==6){
+				if(l1==jl1){			
+					alert('特等奖');
+				}else{			
+					alert('一等奖');
+				}
+			}
+		}
+	</script>
+</body>
+</html>
