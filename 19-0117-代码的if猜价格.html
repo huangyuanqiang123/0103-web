@@ -1,0 +1,25 @@
+<html>
+<head>
+	<title>if登陆界面</title>
+	<style>
+			
+	</style>
+</head>
+<body>
+	商品猜想价格<input type='text' id='goods'/><br/>
+	<input type='button' value='判断' onclick='ab()' id='ban'/>
+	<script>
+		function ab(){
+			a=document.getElementById('goods').value
+			if(a>516){	
+				alert('猜大了!')
+			}else if(a<516){
+				alert('猜小了!')
+			}else{
+				alert('你猜对了，恭喜参与！')
+				document.getElementById('ban').disabled=true
+			}
+		}
+	</script>
+</body>
+</html>
